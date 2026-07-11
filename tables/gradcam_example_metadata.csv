@@ -1,0 +1,5 @@
+case_type,true_latex,predicted_latex,confidence,dataset_index
+Correct high confidence,\%,\%,0.9986722469329834,6185
+Correct low confidence,\cap,\cap,0.047325339168310165,7250
+Incorrect high confidence,\preceq,\prec,0.973380982875824,9048
+Incorrect low confidence,\Longleftrightarrow,\Leftrightarrow,0.03578166663646698,10754
