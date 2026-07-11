@@ -2,6 +2,12 @@
 
 An explainable CNN-based framework for recognizing 369 handwritten mathematical symbol classes from the HASYv2 dataset. The project compares a lightweight custom CNN with EfficientNetV2-S and ConvNeXt-Tiny and includes calibration, confidence-based abstention, robustness testing, Grad-CAM, and SHAP explanations.
 
+## Live Demo
+
+Try the deployed classifier:
+
+https://appapppy-xdz5vdkqnd7pdmnpmhjpls.streamlit.app/
+
 ## Project Objective
 
 The objective is to develop a practical handwritten mathematical symbol classifier for digital homework transcription and intelligent learning support. The system predicts an isolated symbol, returns ranked alternatives, and flags uncertain predictions for human review.
