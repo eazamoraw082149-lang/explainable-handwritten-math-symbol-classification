@@ -1,0 +1,69 @@
+EXPLAINABLE HANDWRITTEN MATHEMATICAL SYMBOL CLASSIFICATION
+FINAL TECHNICAL RESULTS SUMMARY
+
+Dataset
+-------
+Dataset: HASYv2
+Total images: 168,233
+Number of classes: 369
+Development images: 136,116
+Validation images: 15,125
+Locked test images: 16,992
+Input resolution used by models: 96 x 96 RGB
+
+Primary Test Results
+--------------------
+Custom CNN
+- Top-1 accuracy: 81.11%
+- Top-5 accuracy: 98.14%
+- Macro-F1: 68.59%
+- Weighted-F1: 79.49%
+- Balanced accuracy: 70.68%
+
+EfficientNetV2-S
+- Top-1 accuracy: 78.35%
+- Top-5 accuracy: 96.75%
+- Macro-F1: 66.50%
+- Weighted-F1: 77.27%
+- Balanced accuracy: 67.73%
+
+ConvNeXt-Tiny
+- Top-1 accuracy: 76.82%
+- Top-5 accuracy: 96.21%
+- Macro-F1: 64.74%
+- Weighted-F1: 76.04%
+- Balanced accuracy: 66.58%
+
+Selected Deployment Model
+-------------------------
+Model: Custom CNN
+Parameters: 1,333,841
+Deployment file size: approximately 5.12 MB
+Single-symbol Tesla T4 latency: approximately 3.04 ms
+Batch throughput: approximately 7,491 symbols per second
+
+Calibration and Abstention
+--------------------------
+Temperature: 0.7094
+Validation ECE before calibration: 12.54%
+Validation ECE after calibration: 1.54%
+Test ECE before calibration: 12.78%
+Test ECE after calibration: 1.17%
+Confidence threshold: 0.60
+Test coverage: 79.04%
+Test accepted-prediction accuracy: 89.81%
+Test abstention rate: 20.96%
+
+Robustness
+----------
+Clean accuracy: 80.52%
+Rotation +10 degrees: 78.80%
+Mild Gaussian blur: 80.60%
+Thickened strokes: 43.58%
+Partial erasure: 67.58%
+
+Explainability
+--------------
+Grad-CAM was generated from the final custom-CNN convolutional layer.
+A limited SHAP GradientExplainer analysis used 20 validation background images.
+Both methods primarily highlighted handwritten stroke regions.
