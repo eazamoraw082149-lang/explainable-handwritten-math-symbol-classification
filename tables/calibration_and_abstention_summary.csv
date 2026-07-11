@@ -1,2 +1,0 @@
-temperature,validation_ece_before,validation_ece_after,selected_threshold,validation_coverage,validation_accepted_accuracy,test_ece_before,test_ece_after,test_coverage,test_abstention_rate,test_accepted_accuracy
-0.7093505859375,0.12543286383152008,0.015378348529338837,0.5999999999999999,0.7946446537971497,0.9000748991966248,0.12778182327747345,0.011741419322788715,0.7904307842254639,0.20956921577453613,0.8981460928916931
