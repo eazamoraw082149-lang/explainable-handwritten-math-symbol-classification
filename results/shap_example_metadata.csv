@@ -1,0 +1,5 @@
+case_type,true_latex,predicted_latex,ranked_output_index,maximum_positive_attribution,minimum_negative_attribution
+Correct high confidence,\%,\%,125,0.05435510340515926,-0.042897173777983626
+Correct low confidence,\cap,\cap,143,0.029028041167926944,-0.04561193719472568
+Incorrect high confidence,\preceq,\prec,177,0.042009756169693935,-0.017366552967776047
+Incorrect low confidence,\Longleftrightarrow,\Leftrightarrow,227,0.07153108253334865,-0.05813292117494238
